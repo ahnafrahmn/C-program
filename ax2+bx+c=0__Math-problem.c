@@ -7,31 +7,21 @@
 
 int main()
 {
-    int a, b, c;
-    long positive_x, negative_x;
+    float a, b, c, positive_x, negative_x;
     printf("    ax^2 + bx + c = 0 \n");
     printf(" enter the value of a :  ");
-    scanf("%d", &a);
+    scanf("%f", &a);
 
     printf(" enter the value of b :  ");
-    scanf("%d", &b);
+    scanf("%f", &b);
 
     printf(" enter the value of c :  ");
-    scanf("%d", &c);
+    scanf("%f", &c);
 
-    positive_x = (- b + pow((b*b - 4*a*c), 0.5)) / 2*a ;
-    negative_x = (- b - pow((b*b - 4*a*c), 0.5)) / 2*a ;
+    positive_x = (- b + sqrt((pow(b,2) - 4*a*c))) / 2*a ;
+    negative_x = (- b - sqrt((pow(b,2) - 4*a*c))) / 2*a ;
 
-    printf(" x1 = %d  ;  x2 = %d ", positive_x, negative_x);
+    printf(" x1 = %.2f  ;  x2 = %.2f \n", positive_x, negative_x);
 
     return 0;
 }
-
-
-
-
-
-
-
-
-//   printf("");
