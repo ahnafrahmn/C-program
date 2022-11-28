@@ -18,8 +18,8 @@ int main()
     printf(" enter the value of c :  ");
     scanf("%f", &c);
 
-    positive_x = (- b + sqrt((pow(b,2) - 4*a*c))) / 2*a ;
-    negative_x = (- b - sqrt((pow(b,2) - 4*a*c))) / 2*a ;
+    positive_x = (- b + sqrt((b*b - 4*a*c)))/(2*a) ;
+    negative_x = (- b - sqrt((pow(b,2) - 4*a*c)))/(2*a) ;
 
     printf(" x1 = %.2f  ;  x2 = %.2f \n", positive_x, negative_x);
 
