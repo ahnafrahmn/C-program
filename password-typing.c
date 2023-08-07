@@ -8,7 +8,7 @@ void main(){
     password[i] = c;
     i++;
     while(c != 13){
-        usleep(385000);
+        usleep(130000);
         printf("\b*");
         c = getch();
         while(c == 8){
